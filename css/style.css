@@ -59,6 +59,24 @@
   font-weight: 700;
 }
 
+/* Sticky Nav Bar  */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 999;
+  box-shadow: 0 1.2rem 4.8rem rgba(0, 0, 0, 0.05);
+}
+
+.sticky .hero-section {
+  margin-top: 9.6rem;
+}
+
 /* ******************************* */
 /* Featured in SECTION */
 /* ******************************* */
@@ -498,7 +516,6 @@ strong {
 }
 .logo {
   display: block;
-  margin-bottom: 3.2rem;
 }
 .social-links {
   list-style: none;

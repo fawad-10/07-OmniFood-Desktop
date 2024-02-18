@@ -86,6 +86,9 @@ html {
   font-size: 62.5%;
   /* 10px/16px=0.625 -> 62.5% */
   overflow-x: hidden;
+
+  scroll-behavior: smooth;
+  /* Works on CHROME,etc but NOT on "Safari" */
 }
 
 body {
