@@ -255,6 +255,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  max-width: 80%;
 }
 
 .list-item {
@@ -271,7 +272,7 @@ body {
 /* The focus is when user use site only via keyboard so it's  good for accessibilty purpose */
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+  box-shadow: 0 0 0 0.5rem rgba(230, 125, 34, 0.37);
 }
 
 /* ****HELPER Class**** */
