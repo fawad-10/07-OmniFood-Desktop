@@ -17,14 +17,23 @@ const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 yearEl.style.fontWeight = "700";
 
+///////////////////////////////////////////////////////////
 // Making mobile navigaiton
 
 const navBtnEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
-navBtnEl.addEventListener("click", function () {
+const mainNavEl = document.querySelectorAll(".main-nav-link");
+
+function toggleMobileNav() {
   // CLasslist allows to change class of an element in html
   headerEl.classList.toggle("nav-open");
   // toggle allow add when empty  and remove when not empty (both)
+}
+
+navBtnEl.addEventListener("click", toggleMobileNav);
+
+mainNavEl.forEach((link) => {
+  link.addEventListener("click", toggleMobileNav);
 });
 
 ///////////////////////////////////////////////////////////
